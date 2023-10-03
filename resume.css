@@ -1,0 +1,140 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(253, 254, 255);
+	 
+	justify-content: center;
+	align-items: center;
+}
+.full
+{
+display: flex;
+	grid-template-columns: 2fr 4fr;
+  position: relative; 
+	 
+ justify-content: center;
+}
+
+.left
+{
+ padding: 20px;
+ background-color: rgb(255, 108, 108);
+}
+.right
+{
+	 padding:20px;
+	 background-color: rgb(242, 187, 187); 
+}
+
+.image, .Contact, .Address, .Skills, .Language, .Hobbies, .title,
+.Summary, .Experience, .Education, .project {
+	 margin-bottom: 30px; 
+
+}
+.mobile
+{
+	display: none;
+}
+
+table
+{
+	background-color: rgb(255, 112, 112);
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+ 
+td, th
+{
+border:1px solid #623737;
+text-align: left;
+padding: 8px;
+}
+tr:nth-child(even){
+	background-color: #dddddd;
+}
+.mobile_edu
+{
+	display: none;
+}
+
+/*This part @media query*/
+
+@media only screen and (max-width:992px)
+ {
+
+
+.left
+{
+  font-size: 14.5px;
+    position: relative;
+    left:0%;
+    width: 38%;
+
+}
+
+. 
+.right 
+{
+	position: relative;
+}
+.Address
+{
+	font-size: 13.5px;
+}
+.gmail
+{
+	display: none;
+}
+.mobile
+{
+	display: block;
+} 
+ 
+.Education h2
+{
+  position: absolute;  
+    font-size: 23px;
+    left: 1%;
+    top: -37%;
+}
+
+	.desktop_edu
+	{
+		display: none;
+	}
+
+.mobile_edu
+{
+	display: block;
+	font-size: 15px;
+
+}
+ .mobile_edu ul li
+ {
+ 	font-size: 14px;
+ 	line-height: 1.5;
+ 	letter-spacing: 0px;
+ }
+ .mobile_edu ul li label
+ {
+ 	padding-left: 1.4%;
+ }
+ .mobile_edu ul li span
+ {
+ 	font-size:13px;
+ 	margin-left: -3%;
+ }
+.project p
+{
+	font-size: 13px;
+    margin-left: -5%;
+}
+
+}
